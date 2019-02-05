@@ -1,0 +1,126 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    to right, 
+    #ff9e2c 0%, 
+    #ff9e2c 50%, 
+    #b6701e 50%, 
+    #b6701e 100%
+  );
+  font-family: 'Lato', sans-serif;
+}
+.profile-card {
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: hsla(0, 0%, 0%, .9) 10px 10px 80px;
+  width: 400px;
+  height: 450px;
+  max-width: calc(100vw - 10px);
+}
+.head, .links {
+  text-align: center;
+}
+.head, .about {
+  margin-bottom: 5%;
+}
+.content {
+  padding: 5% 10%;
+  border-top: 1px solid hsla(0, 0%, 40%, .8);
+}
+.head {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 1px;
+  background-color: #753519;
+  border: 20px;
+  filter: grayscale(50%);
+}
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(20%);
+}
+.profile-image {
+  margin-top: -70px;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  font-size: 40px;
+  padding: 5px;
+}
+h1 {
+  font-size: 24px;
+  color: #753519;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+h2 {
+  color: #1f3137;
+  
+} 
+span {
+  color: #273d45;
+}
+p {
+  color: #1f3137;
+}
+
+web {
+  text-align: center;
+}
+i, a {
+  color: #b6701e;
+  margin-bottom: 3%;
+}
+p.italic {
+  font-style: italic;
+}
+a:hover {
+  color: #ff9e2c
+}
+i:hover {
+  color: #ff9e2c
+}
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #b6701e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #ff9e2c;
+}
+
+.button:hover {background-color: #ff9e2c}
+
+.button:active {
+  background-color: #ff9e2c;
+  box-shadow: 0 5px #b6701e;
+  transform: translateY(4px);
+}
